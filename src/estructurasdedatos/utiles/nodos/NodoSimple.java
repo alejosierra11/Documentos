@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package estructurasdedatos.utiles.nodos;
 
+<<<<<<< HEAD
 class NodoSimple {
 
     private NodoSimple siguiente;
@@ -30,4 +26,38 @@ class NodoSimple {
         this.siguiente = null;
         this.dato=0;
     }
+=======
+
+public class NodoSimple {
+    
+    private NodoSimple siguiente;
+    private int dato;
+
+    
+    public NodoSimple  getSiguiente() {
+        return siguiente;
+    }
+
+  
+    public void setSiguiente(NodoSimple siguiente) {
+        this.siguiente = siguiente;
+    }
+
+  
+    public int getDato() {
+        return dato;
+    }
+
+ 
+    public void setDato(int dato) {
+        this.dato = dato;
+    }
+
+    public void crearnodo() {
+        this.siguiente = null;
+        this.dato = 0;
+
+    }
+
+>>>>>>> 7d540eeb1bc43f84a20a60845e1eb1e1ed7149b6
 }
