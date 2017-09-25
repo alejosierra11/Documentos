@@ -5,10 +5,32 @@
  */
 package estructurasdedatos.cap2.listas;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author tusk
  */
 public class Cola {
+    private ArrayList<Object> fifo=new ArrayList();
     
+    public void offer(Object o){
+    fifo.add(o);
+    }
+    
+    public Object peek(){
+        if(!(fifo.isEmpty())){
+        return fifo.get(0);
+        }else{
+        return null;
+        }
+    }
+    public Object poll(){
+    if(!(fifo.isEmpty())){
+        Object o= fifo.get(0);
+        return o;
+        }else{
+        return null;
+        }
+    }
 }
