@@ -9,54 +9,37 @@ package estructurasdedatos.utiles.nodos;
  *
  * @author tusk
  */
-public class NodoArbolB {
+public class NodoArbolBinario {
 
-    private String dato;
-    private Nodo izdo;
-    private Nodo dcho;
+    private int dato;
+    private NodoArbolBinario nodoDerecho;
+    private NodoArbolBinario nodoIzquierdo;
 
-    public NodoArbolB(String dato) {
+    public void NodoArbolBinario(int dato) {
         this.dato = dato;
     }
 
-    public String getDato() {
+    public int getDato() {
         return dato;
     }
 
-    /**
-     * @param dato the dato to set
-     */
-    public void setDato(String dato) {
+    public void setDato(int dato) {
         this.dato = dato;
     }
 
-    /**
-     * @return the izdo
-     */
-    public Nodo getIzdo() {
-        return izdo;
+    public NodoArbolBinario getNodoDerecho() {
+        return nodoDerecho;
     }
 
-    /**
-     * @param izdo the izdo to set
-     */
-    public void setIzdo(Nodo izdo) {
-        this.izdo = izdo;
+    public void setNodoDerecho(NodoArbolBinario nodoDerecho) {
+        this.nodoDerecho = nodoDerecho;
     }
 
-    /**
-     * @return the dcho
-     */
-    public Nodo getDcho() {
-        return dcho;
+    public NodoArbolBinario getNodoIzquierdo() {
+        return nodoIzquierdo;
     }
 
-    /**
-     * @param dcho the dcho to set
-     */
-    public void setDcho(Nodo dcho) {
-        this.dcho = dcho;
+    public void setNodoIzquierdo(NodoArbolBinario nodoIzquierdo) {
+        this.nodoIzquierdo = nodoIzquierdo;
     }
-
 }
-
